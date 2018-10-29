@@ -25,4 +25,11 @@ class HomeController extends Controller
     {
         return view('home');
     }
+
+//NEW
+
+   // public function homepage()
+   // {
+   //     return view('layout.app');
+   // }
 }

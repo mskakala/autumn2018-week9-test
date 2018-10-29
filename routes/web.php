@@ -11,8 +11,21 @@
 |
 */
 
+// Route::get('/', function () {
+//    return view('welcome');
+// });
+
+
+// HOMEPAGE -> LOGIN ()/ 
 Route::get('/', function () {
-    return view('welcome');
-});
+    return view('homepage');
+ });
+
+ Route::get('/homepage', function () {
+    return view('homepage');
+ });
+
+//Route::get('/homepage', 'HomeController@homepage');
+
 
 Auth::routes();

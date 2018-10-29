@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Hero;
 
 class HomeController extends Controller
 {
@@ -23,7 +24,11 @@ class HomeController extends Controller
      */
     public function index()
     {
-        return view('home');
+        $results = Hero::all();
+        //->orderBy('name');
+        //->get();
+
+        return view('home', compact('results'));
     }
 
 //NEW

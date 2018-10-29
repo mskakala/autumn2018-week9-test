@@ -21,14 +21,19 @@ Route::get('/', function () {
     return view('homepage');
  });
 
-Route::get('/homepage', function () {
+ Route::get('/homepage', function () {
     return view('homepage');
  });
 
+ 
 //Route::get('/homepage', 'HomeController@homepage');
 
+//Pages
+Route::get('hero/index', 'HeroController@index');
+
+// Hero slug -> specific
 Route::get('/hero/{hero_slug}', 'HeroController@show');
-// but cannot find class: Hero..
-// ! done -> needed a model ;-)
+
+
 
 Auth::routes();

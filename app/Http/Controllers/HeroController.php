@@ -21,7 +21,12 @@ class HeroController extends Controller
         return $view;
     }
 
-    public function index() {
-        return view('hero.index');
+    public function index()
+    {
+        $results = Hero::all();
+        //->orderBy('name');
+        //->get();
+
+        return view('hero/index', compact('results'));
     }
 }

@@ -25,13 +25,12 @@ Route::get('/', function () {
     return view('homepage');
  });
 
- 
 //Route::get('/homepage', 'HomeController@homepage');
 
 //Pages
 Route::get('hero/index', 'HeroController@index');
 
-// Hero slug -> specific
+// Hero slug
 Route::get('/hero/{hero_slug}', 'HeroController@show');
 
 

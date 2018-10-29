@@ -22,14 +22,8 @@ class HomeController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function index()
-    {
-        $results = Hero::all();
-        //->orderBy('name');
-        //->get();
-
-        return view('home', compact('results'));
-    }
+    
+    
 
 //NEW
 
